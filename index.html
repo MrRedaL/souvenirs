@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connaître le vrai visage</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 400px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        /* En-tête coloré */
+        .hero {
+            background: linear-gradient(180deg, #ff7a59 0%, #e84342 100%);
+            padding: 30px 20px 40px;
+            color: white;
+            text-align: left;
+            position: relative;
+        }
+
+        .hero-category {
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            opacity: 0.8;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .hero-title {
+            font-size: 28px;
+            font-weight: 800;
+            line-height: 1.15;
+            margin-bottom: 20px;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 28px;
+            height: 28px;
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        /* Illustration centrale */
+        .hero-illustration {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin-top: 20px;
+            font-size: 48px;
+        }
+
+        /* Range d'icônes */
+        .icons-row {
+            display: flex;
+            justify-content: space-around;
+            padding: 15px 20px;
+            background-color: #ffffff;
+            border-bottom: 1px solid #e5e5ea;
+        }
+
+        .icon-box {
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            background-color: #f2f2f7;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        /* Contenu du texte */
+        .content {
+            padding: 25px 20px;
+            color: #3a3a3c;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+
+        .content p {
+            margin-bottom: 15px;
+        }
+
+        .content strong {
+            color: #000000;
+        }
+
+        /* Bouton / Lien du bas */
+        .link-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #f2f2f7;
+            margin: 10px 20px 25px;
+            padding: 12px 16px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: inherit;
+            transition: background-color 0.2s ease;
+        }
+
+        .link-card:hover {
+            background-color: #e5e5ea;
+        }
+
+        .link-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .link-title {
+            font-weight: 600;
+            font-size: 14px;
+            color: #000000;
+        }
+
+        .link-url {
+            font-size: 12px;
+            color: #8e8e93;
+            margin-top: 2px;
+        }
+
+        .chevron {
+            color: #c7c7cc;
+            font-weight: bold;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <!-- Section En-tête -->
+        <div class="hero">
+            <a href="#" class="close-btn">✕</a>
+            <div class="hero-category">Découverte</div>
+            <h1 class="hero-title">Connaître le vrai visage</h1>
+            
+            <div class="hero-illustration">
+                <span>✏️</span>
+                <span>🧽</span>
+                <span>🐱</span>
+            </div>
+        </div>
+
+        <!-- Rangée d'icônes -->
+        <div class="icons-row">
+            <div class="icon-box">🦅</div>
+            <div class="icon-box">🎨</div>
+            <div class="icon-box">🌈</div>
+            <div class="icon-box">🎮</div>
+        </div>
+
+        <!-- Contenu textuel -->
+        <div class="content">
+            <p><strong>Savoir plusieurs trucs</strong> sur le sujet va vous aider à bien vous orienter ainsi que bien interpréter la fin de l’histoire : drôlement, le bien et le mal n’ont pas été identifiés !</p>
+            <p>Avoir un esprit, un cœur, une idée, une vision, un rêve peut aussi paraître plus qu’une simple détermination.</p>
+        </div>
+
+        <!-- Lien de redirection -->
+        <a href="https://www.jeu.fr" target="_blank" class="link-card">
+            <div class="link-info">
+                <span class="link-title">Accéder au jeu</span>
+                <span class="link-url">www.jeu.fr</span>
+            </div>
+            <span class="chevron">›</span>
+        </a>
+    </div>
+
+</body>
+</html>
